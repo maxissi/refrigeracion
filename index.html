@@ -3,68 +3,93 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Enlaces de Contacto</title>
+    <title>Contacto - Técnicos en Refrigeración</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f4f4f9;
-            color: #333;
+        * {
             margin: 0;
             padding: 0;
+            box-sizing: border-box;
+            font-family: 'Arial', sans-serif;
+        }
+        body {
+            background: linear-gradient(135deg, #1e3c72, #2a5298);
             display: flex;
             justify-content: center;
             align-items: center;
             height: 100vh;
-        }
-        header {
-            background-color: #4CAF50;
-            padding: 20px;
             text-align: center;
             color: white;
-            width: 100%;
-        }
-        h1 {
-            font-size: 2.5em;
-            margin: 0;
         }
         .container {
-            max-width: 800px;
-            padding: 20px;
-            background-color: white;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            background: rgba(255, 255, 255, 0.1);
+            padding: 30px;
+            border-radius: 12px;
+            backdrop-filter: blur(10px);
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+            max-width: 400px;
+            width: 90%;
+        }
+        h1 {
+            margin-bottom: 20px;
+            font-size: 1.8em;
+        }
+        .contact-options {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            margin-top: 10px;
+        }
+        .contact-btn {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            padding: 12px;
+            font-size: 1.2em;
             border-radius: 8px;
-            text-align: center;
-        }
-        ul {
-            list-style-type: none;
-            padding: 0;
-        }
-        li {
-            margin: 15px 0;
-        }
-        a {
             text-decoration: none;
             color: white;
-            background-color: #4CAF50;
-            padding: 10px 20px;
-            border-radius: 5px;
-            transition: background-color 0.3s;
-            display: inline-block;
+            transition: transform 0.2s, box-shadow 0.3s;
         }
-        a:hover {
-            background-color: #45a049;
+        .contact-btn i {
+            font-size: 1.5em;
+        }
+        .whatsapp {
+            background: #25D366;
+        }
+        .whatsapp:hover {
+            background: #1da851;
+            transform: scale(1.05);
+            box-shadow: 0 4px 10px rgba(37, 211, 102, 0.4);
+        }
+        .instagram {
+            background: #E4405F;
+        }
+        .instagram:hover {
+            background: #c72e4d;
+            transform: scale(1.05);
+            box-shadow: 0 4px 10px rgba(228, 64, 95, 0.4);
         }
     </style>
 </head>
 <body>
-    <header>
-        <h1>Selecciona tu opción de contacto</h1>
-    </header>
     <div class="container">
-        <ul>
-            <li><a href="https://wa.me/+5493856415691" target="_blank">Contactar por WhatsApp</a></li>
-            <li><a href="https://www.instagram.com/rojastyty255" target="_blank">Seguir en Instagram</a></li>
-        </ul>
+        <h1>Selecciona tu opción de contacto</h1>
+        <div class="contact-options">
+            <a class="contact-btn whatsapp" href="https://wa.me/+5493856415691" target="_blank">
+                <i class="fa-brands fa-whatsapp"></i> WhatsApp Técnico 1
+            </a>
+            <a class="contact-btn whatsapp" href="https://wa.me/+5493856415692" target="_blank">
+                <i class="fa-brands fa-whatsapp"></i> WhatsApp Técnico 2
+            </a>
+            <a class="contact-btn instagram" href="https://www.instagram.com/rojastyty255" target="_blank">
+                <i class="fa-brands fa-instagram"></i> Instagram Técnico 1
+            </a>
+            <a class="contact-btn instagram" href="https://www.instagram.com/tecnico2" target="_blank">
+                <i class="fa-brands fa-instagram"></i> Instagram Técnico 2
+            </a>
+        </div>
     </div>
 </body>
 </html>
